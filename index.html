@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Muneeb</a>
+        
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+    <h1>Hi, I am <span class="highlight">Muhammad Muneeb</span></h1>
+    <p>Web Developer | Designer | Learner</p>
+    <button class="hero-btn">Hire Me</button>
+    <a href="#about" class="scroll-down">
+        <span>Scroll Down</span>
+        <span class="arrow">↓</span>
+    </a>
+</section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>My Name is <mark>Muhammad Muneeb</mark>.<br><br>I am a <mark>Web Developer</mark>.</p>
+    </section>
+
+<section class="services" id="services">
+    <h2>My Services</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Responsive websites banata hoon HTML, CSS aur JavaScript se.</p>
+        </div>
+        <div class="service-card">
+            <h3>Graphics Design</h3>
+            <p>Logos, banners aur social media posts design karta hoon.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Leave a Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section><footer class="footer">
+    <p>© 2026 Muhammad Muneeb. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+
+</body>
+          </html>
